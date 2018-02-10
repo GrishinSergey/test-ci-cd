@@ -2,7 +2,8 @@ version: 2
 
 general:
   artifacts:
-        - /home/ubuntu/TestCiCd/artifacts/
+    - "app/build/outputs/apk/app-release-unsigned.apk"
+
   branches:
     only:
      - master # list of branches to build
