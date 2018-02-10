@@ -1,9 +1,6 @@
 version: 2
 
 general:
-  artifacts:
-    - "app/build/outputs/apk/app-release-unsigned.apk"
-
   branches:
     only:
      - master # list of branches to build
@@ -29,8 +26,3 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
-      - store_artifacts:
-          path: app/build/reports
-          destination: reports
-      - store_test_results:
-          path: app/build/test-results
