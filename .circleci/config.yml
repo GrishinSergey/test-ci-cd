@@ -30,7 +30,7 @@ jobs:
           path: /home/ubuntu/app/build/reports
           destination: reports
       - store_test_results:
-          path: /home/ubuntu/app/build/reports
+          path: /home/ubuntu/app/build/test-results
       - run:
           name: Release Build
           command: ./gradlew assembleRelease
